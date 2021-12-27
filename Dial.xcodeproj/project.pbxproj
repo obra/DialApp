@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		888FCBEB27794688000A6A40 /* DialAppConfig+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888FCBE927794688000A6A40 /* DialAppConfig+CoreDataClass.swift */; };
+		888FCBEC27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888FCBEA27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift */; };
+		888FCBEF277956D7000A6A40 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 888FCBEE277956D7000A6A40 /* KeyboardShortcuts */; };
+		888FCBF127795773000A6A40 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888FCBF027795773000A6A40 /* Constants.swift */; };
+		88E63E45277918A0009A9F02 /* AppConfig Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E63E44277918A0009A9F02 /* AppConfig Detail.swift */; };
+		88E63E47277919ED009A9F02 /* AppList Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E63E46277919ED009A9F02 /* AppList Row.swift */; };
+		88FA9F352778DC4200221D6F /* DialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F342778DC4200221D6F /* DialApp.swift */; };
+		88FA9F372778DC4200221D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F362778DC4200221D6F /* ContentView.swift */; };
+		88FA9F392778DC4500221D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FA9F382778DC4500221D6F /* Assets.xcassets */; };
+		88FA9F3C2778DC4500221D6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FA9F3B2778DC4500221D6F /* Preview Assets.xcassets */; };
+		88FA9F3E2778DC4500221D6F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F3D2778DC4500221D6F /* Persistence.swift */; };
+		88FA9F412778DC4500221D6F /* Dial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F3F2778DC4500221D6F /* Dial.xcdatamodeld */; };
+		88FA9F4C2778DC4500221D6F /* DialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F4B2778DC4500221D6F /* DialTests.swift */; };
+		88FA9F562778DC4500221D6F /* DialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F552778DC4500221D6F /* DialUITests.swift */; };
+		88FA9F582778DC4500221D6F /* DialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9F572778DC4500221D6F /* DialUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88FA9F482778DC4500221D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88FA9F292778DC4200221D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FA9F302778DC4200221D6F;
+			remoteInfo = Dial;
+		};
+		88FA9F522778DC4500221D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88FA9F292778DC4200221D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88FA9F302778DC4200221D6F;
+			remoteInfo = Dial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		888FCBE927794688000A6A40 /* DialAppConfig+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialAppConfig+CoreDataClass.swift"; sourceTree = "<group>"; };
+		888FCBEA27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialAppConfig+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		888FCBF027795773000A6A40 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		88E63E44277918A0009A9F02 /* AppConfig Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConfig Detail.swift"; sourceTree = "<group>"; };
+		88E63E46277919ED009A9F02 /* AppList Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppList Row.swift"; sourceTree = "<group>"; };
+		88E63E4F27793492009A9F02 /* Dependencies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Dependencies; path = Dial/Dependencies; sourceTree = "<group>"; };
+		88FA9F312778DC4200221D6F /* Dial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FA9F342778DC4200221D6F /* DialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialApp.swift; sourceTree = "<group>"; };
+		88FA9F362778DC4200221D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88FA9F382778DC4500221D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88FA9F3B2778DC4500221D6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88FA9F3D2778DC4500221D6F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		88FA9F402778DC4500221D6F /* Dial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dial.xcdatamodel; sourceTree = "<group>"; };
+		88FA9F422778DC4500221D6F /* Dial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dial.entitlements; sourceTree = "<group>"; };
+		88FA9F472778DC4500221D6F /* DialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FA9F4B2778DC4500221D6F /* DialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialTests.swift; sourceTree = "<group>"; };
+		88FA9F512778DC4500221D6F /* DialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FA9F552778DC4500221D6F /* DialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialUITests.swift; sourceTree = "<group>"; };
+		88FA9F572778DC4500221D6F /* DialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88FA9F2E2778DC4200221D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888FCBEF277956D7000A6A40 /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FA9F442778DC4500221D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FA9F4E2778DC4500221D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88E63E4C277933BF009A9F02 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				88E63E4F27793492009A9F02 /* Dependencies */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		88FA9F282778DC4200221D6F = {
+			isa = PBXGroup;
+			children = (
+				888FCBE927794688000A6A40 /* DialAppConfig+CoreDataClass.swift */,
+				888FCBEA27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift */,
+				88E63E4C277933BF009A9F02 /* Packages */,
+				88FA9F332778DC4200221D6F /* Dial */,
+				88FA9F4A2778DC4500221D6F /* DialTests */,
+				88FA9F542778DC4500221D6F /* DialUITests */,
+				88FA9F322778DC4200221D6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88FA9F322778DC4200221D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88FA9F312778DC4200221D6F /* Dial.app */,
+				88FA9F472778DC4500221D6F /* DialTests.xctest */,
+				88FA9F512778DC4500221D6F /* DialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88FA9F332778DC4200221D6F /* Dial */ = {
+			isa = PBXGroup;
+			children = (
+				88FA9F342778DC4200221D6F /* DialApp.swift */,
+				88FA9F362778DC4200221D6F /* ContentView.swift */,
+				88E63E46277919ED009A9F02 /* AppList Row.swift */,
+				88E63E44277918A0009A9F02 /* AppConfig Detail.swift */,
+				88FA9F382778DC4500221D6F /* Assets.xcassets */,
+				88FA9F3D2778DC4500221D6F /* Persistence.swift */,
+				88FA9F422778DC4500221D6F /* Dial.entitlements */,
+				88FA9F3F2778DC4500221D6F /* Dial.xcdatamodeld */,
+				88FA9F3A2778DC4500221D6F /* Preview Content */,
+				888FCBF027795773000A6A40 /* Constants.swift */,
+			);
+			path = Dial;
+			sourceTree = "<group>";
+		};
+		88FA9F3A2778DC4500221D6F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88FA9F3B2778DC4500221D6F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88FA9F4A2778DC4500221D6F /* DialTests */ = {
+			isa = PBXGroup;
+			children = (
+				88FA9F4B2778DC4500221D6F /* DialTests.swift */,
+			);
+			path = DialTests;
+			sourceTree = "<group>";
+		};
+		88FA9F542778DC4500221D6F /* DialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88FA9F552778DC4500221D6F /* DialUITests.swift */,
+				88FA9F572778DC4500221D6F /* DialUITestsLaunchTests.swift */,
+			);
+			path = DialUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88FA9F302778DC4200221D6F /* Dial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FA9F5B2778DC4500221D6F /* Build configuration list for PBXNativeTarget "Dial" */;
+			buildPhases = (
+				88FA9F2D2778DC4200221D6F /* Sources */,
+				88FA9F2E2778DC4200221D6F /* Frameworks */,
+				88FA9F2F2778DC4200221D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dial;
+			packageProductDependencies = (
+				888FCBEE277956D7000A6A40 /* KeyboardShortcuts */,
+			);
+			productName = Dial;
+			productReference = 88FA9F312778DC4200221D6F /* Dial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88FA9F462778DC4500221D6F /* DialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FA9F5E2778DC4500221D6F /* Build configuration list for PBXNativeTarget "DialTests" */;
+			buildPhases = (
+				88FA9F432778DC4500221D6F /* Sources */,
+				88FA9F442778DC4500221D6F /* Frameworks */,
+				88FA9F452778DC4500221D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88FA9F492778DC4500221D6F /* PBXTargetDependency */,
+			);
+			name = DialTests;
+			productName = DialTests;
+			productReference = 88FA9F472778DC4500221D6F /* DialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88FA9F502778DC4500221D6F /* DialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FA9F612778DC4500221D6F /* Build configuration list for PBXNativeTarget "DialUITests" */;
+			buildPhases = (
+				88FA9F4D2778DC4500221D6F /* Sources */,
+				88FA9F4E2778DC4500221D6F /* Frameworks */,
+				88FA9F4F2778DC4500221D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88FA9F532778DC4500221D6F /* PBXTargetDependency */,
+			);
+			name = DialUITests;
+			productName = DialUITests;
+			productReference = 88FA9F512778DC4500221D6F /* DialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88FA9F292778DC4200221D6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					88FA9F302778DC4200221D6F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					88FA9F462778DC4500221D6F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 88FA9F302778DC4200221D6F;
+					};
+					88FA9F502778DC4500221D6F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 88FA9F302778DC4200221D6F;
+					};
+				};
+			};
+			buildConfigurationList = 88FA9F2C2778DC4200221D6F /* Build configuration list for PBXProject "Dial" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88FA9F282778DC4200221D6F;
+			packageReferences = (
+				888FCBED277956D7000A6A40 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			productRefGroup = 88FA9F322778DC4200221D6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88FA9F302778DC4200221D6F /* Dial */,
+				88FA9F462778DC4500221D6F /* DialTests */,
+				88FA9F502778DC4500221D6F /* DialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88FA9F2F2778DC4200221D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FA9F3C2778DC4500221D6F /* Preview Assets.xcassets in Resources */,
+				88FA9F392778DC4500221D6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FA9F452778DC4500221D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FA9F4F2778DC4500221D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88FA9F2D2778DC4200221D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FA9F3E2778DC4500221D6F /* Persistence.swift in Sources */,
+				88FA9F372778DC4200221D6F /* ContentView.swift in Sources */,
+				88FA9F352778DC4200221D6F /* DialApp.swift in Sources */,
+				88E63E47277919ED009A9F02 /* AppList Row.swift in Sources */,
+				888FCBEB27794688000A6A40 /* DialAppConfig+CoreDataClass.swift in Sources */,
+				888FCBEC27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift in Sources */,
+				88E63E45277918A0009A9F02 /* AppConfig Detail.swift in Sources */,
+				88FA9F412778DC4500221D6F /* Dial.xcdatamodeld in Sources */,
+				888FCBF127795773000A6A40 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FA9F432778DC4500221D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FA9F4C2778DC4500221D6F /* DialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FA9F4D2778DC4500221D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FA9F582778DC4500221D6F /* DialUITestsLaunchTests.swift in Sources */,
+				88FA9F562778DC4500221D6F /* DialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88FA9F492778DC4500221D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88FA9F302778DC4200221D6F /* Dial */;
+			targetProxy = 88FA9F482778DC4500221D6F /* PBXContainerItemProxy */;
+		};
+		88FA9F532778DC4500221D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88FA9F302778DC4200221D6F /* Dial */;
+			targetProxy = 88FA9F522778DC4500221D6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88FA9F592778DC4500221D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88FA9F5A2778DC4500221D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		88FA9F5C2778DC4500221D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dial/Dial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dial/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AUZGMT2H5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keyboard.Dial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88FA9F5D2778DC4500221D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dial/Dial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dial/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AUZGMT2H5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keyboard.Dial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		88FA9F5F2778DC4500221D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AUZGMT2H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keyboard.DialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dial.app/Contents/MacOS/Dial";
+			};
+			name = Debug;
+		};
+		88FA9F602778DC4500221D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AUZGMT2H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keyboard.DialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dial.app/Contents/MacOS/Dial";
+			};
+			name = Release;
+		};
+		88FA9F622778DC4500221D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AUZGMT2H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keyboard.DialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dial;
+			};
+			name = Debug;
+		};
+		88FA9F632778DC4500221D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8AUZGMT2H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keyboard.DialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88FA9F2C2778DC4200221D6F /* Build configuration list for PBXProject "Dial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FA9F592778DC4500221D6F /* Debug */,
+				88FA9F5A2778DC4500221D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88FA9F5B2778DC4500221D6F /* Build configuration list for PBXNativeTarget "Dial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FA9F5C2778DC4500221D6F /* Debug */,
+				88FA9F5D2778DC4500221D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88FA9F5E2778DC4500221D6F /* Build configuration list for PBXNativeTarget "DialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FA9F5F2778DC4500221D6F /* Debug */,
+				88FA9F602778DC4500221D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88FA9F612778DC4500221D6F /* Build configuration list for PBXNativeTarget "DialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FA9F622778DC4500221D6F /* Debug */,
+				88FA9F632778DC4500221D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		888FCBED277956D7000A6A40 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		888FCBEE277956D7000A6A40 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 888FCBED277956D7000A6A40 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		88FA9F3F2778DC4500221D6F /* Dial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88FA9F402778DC4500221D6F /* Dial.xcdatamodel */,
+			);
+			currentVersion = 88FA9F402778DC4500221D6F /* Dial.xcdatamodel */;
+			path = Dial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 88FA9F292778DC4200221D6F /* Project object */;
+}

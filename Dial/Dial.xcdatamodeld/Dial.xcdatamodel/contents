@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="DialAppConfig" representedClassName="DialAppConfig" syncable="YES">
+        <attribute name="bundleId" attributeType="String" defaultValueString="Undefined app"/>
+        <attribute name="clickAction" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" defaultValueString="00000000-0000-0000-0000-000000000000" usesScalarValueType="NO"/>
+        <attribute name="localizedAppName" attributeType="String" defaultValueString="Untitled application"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="turnLeftAction" optional="YES" attributeType="String"/>
+        <attribute name="turnRightAction" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="DialAppConfig" positionX="-63" positionY="-18" width="128" height="134"/>
+    </elements>
+</model>
