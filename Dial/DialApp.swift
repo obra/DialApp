@@ -6,6 +6,12 @@
 //
 
 import SwiftUI
+import Preferences
+
+
+extension Preferences.PaneIdentifier {
+    static let accounts = Self("accounts")
+}
 
 
 @main
@@ -14,13 +20,30 @@ struct DialApp: App {
     let notificationCenter = NSWorkspace.shared.notificationCenter
     @Environment(\.scenePhase) var scenePhase
 
+    let GeneralPreferenceViewController: () -> PreferencePane = {
+        let paneView = Preferences.Pane(
+            identifier: .general,
+            title: "General",
+            toolbarIcon: NSImage(systemSymbolName: "gearshape", accessibilityDescription: "General preferences")!
+        ) {
+            GeneralSettingsView()
+        }
+
+        return Preferences.PaneHostingController(pane: paneView)
+    }
+    
+
+    
+    
+
+ 
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)        .onReceive(notificationCenter.publisher(for: NSWorkspace.didActivateApplicationNotification)) {_ in
                     
                     print("Moving to the background!")
-                  
                     let frontmostApp = NSWorkspace.shared.frontmostApplication!
                     print(frontmostApp)
                     
@@ -45,12 +68,22 @@ struct DialApp: App {
                 }
 
 
-        }
-            .onChange(of: scenePhase) { _ in
-                print("SAving changes?")
-                persistenceController.save()
+        }.commands {
+            CommandGroup(replacing: CommandGroupPlacement.appSettings) {
+                Button("Preferences...") {
+                    PreferencesWindowController(
+                        preferencePanes: [GeneralPreferenceViewController()
+                                         ],
+                        style: .toolbarItems,
+                        animated: true,
+                        hidesToolbarForSingleItem: true
+                    ).show()
+                }.keyboardShortcut(KeyEquivalent(","), modifiers: .command)
             }
+          
+        }
     }
+
     static func turnLeft() {
 
         print("nbow turning left")

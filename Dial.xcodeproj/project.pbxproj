@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88733817277A1EC000046EE2 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 88733816277A1EC000046EE2 /* LaunchAtLogin */; };
+		8873381A277A205000046EE2 /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 88733819277A205000046EE2 /* Preferences */; };
+		88733822277A3D5900046EE2 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88733821277A3D5900046EE2 /* GeneralSettingsView.swift */; };
 		888FCBEB27794688000A6A40 /* DialAppConfig+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888FCBE927794688000A6A40 /* DialAppConfig+CoreDataClass.swift */; };
 		888FCBEC27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888FCBEA27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift */; };
 		888FCBEF277956D7000A6A40 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 888FCBEE277956D7000A6A40 /* KeyboardShortcuts */; };
@@ -42,9 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88733821277A3D5900046EE2 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
 		888FCBE927794688000A6A40 /* DialAppConfig+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialAppConfig+CoreDataClass.swift"; sourceTree = "<group>"; };
 		888FCBEA27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DialAppConfig+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		888FCBF027795773000A6A40 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		888FCBF2277A13EF000A6A40 /* KeyboardShortcuts */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KeyboardShortcuts; path = Dial/Dependencies/KeyboardShortcuts; sourceTree = "<group>"; };
 		88E63E44277918A0009A9F02 /* AppConfig Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConfig Detail.swift"; sourceTree = "<group>"; };
 		88E63E46277919ED009A9F02 /* AppList Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppList Row.swift"; sourceTree = "<group>"; };
 		88E63E4F27793492009A9F02 /* Dependencies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Dependencies; path = Dial/Dependencies; sourceTree = "<group>"; };
@@ -68,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88733817277A1EC000046EE2 /* LaunchAtLogin in Frameworks */,
+				8873381A277A205000046EE2 /* Preferences in Frameworks */,
 				888FCBEF277956D7000A6A40 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				88E63E4F27793492009A9F02 /* Dependencies */,
+				888FCBF2277A13EF000A6A40 /* KeyboardShortcuts */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 				88FA9F3F2778DC4500221D6F /* Dial.xcdatamodeld */,
 				88FA9F3A2778DC4500221D6F /* Preview Content */,
 				888FCBF027795773000A6A40 /* Constants.swift */,
+				88733821277A3D5900046EE2 /* GeneralSettingsView.swift */,
 			);
 			path = Dial;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 				88FA9F2D2778DC4200221D6F /* Sources */,
 				88FA9F2E2778DC4200221D6F /* Frameworks */,
 				88FA9F2F2778DC4200221D6F /* Resources */,
+				88554DFA277A1C9500FE8C45 /* Copy Launch at login helper */,
 			);
 			buildRules = (
 			);
@@ -180,6 +190,8 @@
 			name = Dial;
 			packageProductDependencies = (
 				888FCBEE277956D7000A6A40 /* KeyboardShortcuts */,
+				88733816277A1EC000046EE2 /* LaunchAtLogin */,
+				88733819277A205000046EE2 /* Preferences */,
 			);
 			productName = Dial;
 			productReference = 88FA9F312778DC4200221D6F /* Dial.app */;
@@ -255,6 +267,8 @@
 			mainGroup = 88FA9F282778DC4200221D6F;
 			packageReferences = (
 				888FCBED277956D7000A6A40 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				88733815277A1EC000046EE2 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				88733818277A205000046EE2 /* XCRemoteSwiftPackageReference "Preferences" */,
 			);
 			productRefGroup = 88FA9F322778DC4200221D6F /* Products */;
 			projectDirPath = "";
@@ -293,6 +307,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88554DFA277A1C9500FE8C45 /* Copy Launch at login helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Launch at login helper";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88FA9F2D2778DC4200221D6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,6 +336,7 @@
 				88FA9F3E2778DC4500221D6F /* Persistence.swift in Sources */,
 				88FA9F372778DC4200221D6F /* ContentView.swift in Sources */,
 				88FA9F352778DC4200221D6F /* DialApp.swift in Sources */,
+				88733822277A3D5900046EE2 /* GeneralSettingsView.swift in Sources */,
 				88E63E47277919ED009A9F02 /* AppList Row.swift in Sources */,
 				888FCBEB27794688000A6A40 /* DialAppConfig+CoreDataClass.swift in Sources */,
 				888FCBEC27794688000A6A40 /* DialAppConfig+CoreDataProperties.swift in Sources */,
@@ -464,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Dial/Dial.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -491,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Dial/Dial.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -626,6 +664,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		88733815277A1EC000046EE2 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		88733818277A205000046EE2 /* XCRemoteSwiftPackageReference "Preferences" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Preferences";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		888FCBED277956D7000A6A40 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -637,6 +691,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		88733816277A1EC000046EE2 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88733815277A1EC000046EE2 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		88733819277A205000046EE2 /* Preferences */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88733818277A205000046EE2 /* XCRemoteSwiftPackageReference "Preferences" */;
+			productName = Preferences;
+		};
 		888FCBEE277956D7000A6A40 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 888FCBED277956D7000A6A40 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;

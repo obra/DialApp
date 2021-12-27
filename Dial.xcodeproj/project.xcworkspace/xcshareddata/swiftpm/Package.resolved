@@ -2,11 +2,20 @@
   "object": {
     "pins": [
       {
-        "package": "KeyboardShortcuts",
-        "repositoryURL": "https://github.com/sindresorhus/KeyboardShortcuts",
+        "package": "LaunchAtLogin",
+        "repositoryURL": "https://github.com/sindresorhus/LaunchAtLogin",
         "state": {
           "branch": "main",
-          "revision": "4f1541b4887c527bee187f558c981c9a0fc56df2",
+          "revision": "e8171b3e38a2816f579f58f3dac1522aa39efe41",
+          "version": null
+        }
+      },
+      {
+        "package": "Preferences",
+        "repositoryURL": "https://github.com/sindresorhus/Preferences",
+        "state": {
+          "branch": "main",
+          "revision": "ffeaaad1def45d0625720dc1adae3789cd9c167d",
           "version": null
         }
       }

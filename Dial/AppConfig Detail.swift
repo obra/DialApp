@@ -21,6 +21,7 @@ struct AppConfig_Detail: View {
                 
                 
             }
+            
             HStack {
           TextField ("Right",text: $appConfig.turnRightAction )
             }
@@ -31,7 +32,7 @@ struct AppConfig_Detail: View {
             Button("Left", action: turnLeft)
         }
 
-        
+      
         
     }
     func turnLeft() {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import LaunchAtLogin
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -38,9 +39,8 @@ struct ContentView: View {
                     Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
                     }
-                }
+                      }
             }
-          
             
         }
     }
