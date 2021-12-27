@@ -210,6 +210,9 @@ extension KeyboardShortcuts {
 					return nil
 				}
 
+                let shortcut = Shortcut(event: event)
+                
+/* Jesse: Disable this check because we need to record such shortcuts for other apps
 				// The “shift” key is not allowed without other modifiers or a function key, since it doesn't actually work.
 				guard
 					!event.modifiers.subtracting(.shift).isEmpty
@@ -219,7 +222,9 @@ extension KeyboardShortcuts {
 					NSSound.beep()
 					return nil
 				}
+*/
 
+/* Jesse Not useful if we're trying to record shortcuts for other apps
 				if let menuItem = shortcut.takenByMainMenu {
 					// TODO: Find a better way to make it possible to dismiss the alert by pressing "Enter". How can we make the input automatically temporarily lose focus while the alert is open?
 					self.blur()
@@ -233,7 +238,10 @@ extension KeyboardShortcuts {
 
 					return nil
 				}
+*/
 
+
+/* Jesse Not useful if we're trying to record shortcuts for other apps
 				guard !shortcut.isTakenBySystem else {
 					self.blur()
 
@@ -248,6 +256,7 @@ extension KeyboardShortcuts {
 
 					return nil
 				}
+*/
 
 				self.stringValue = "\(shortcut)"
 				self.showsCancelButton = true
