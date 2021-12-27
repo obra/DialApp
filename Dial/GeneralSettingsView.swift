@@ -7,15 +7,15 @@ struct GeneralSettingsView: View {
     // @AppStorage("colorSelecction") var colorSelecction = 0
     // @AppStorage("autoCloseWindowEditor") var autoCloseWindowEditor = false
     // @AppStorage("autoCloseWindowTimer") var autoCloseWindowTimer = 0
-   // @AppStorage("notesSizeInGrid") var notesSizeInGrid = 0.0
-
+    // @AppStorage("notesSizeInGrid") var notesSizeInGrid = 0.0
+    
     @ObservedObject private var launchAtLogin = LaunchAtLogin.observable
-
+    
     private let contentWidth: Double = 450.0
     
     var body: some View {
         Preferences.Container(contentWidth: contentWidth) {
-
+            
             Preferences.Section(label: {
                 Toggle("Launch at login", isOn: $launchAtLogin.isEnabled)
             }) {

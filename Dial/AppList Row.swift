@@ -11,16 +11,16 @@ import CoreData
 
 struct AppList_Row: View {
     @ObservedObject var appConfig: DialAppConfig
-
+    
     var body: some View {
         HStack {
             Text(appConfig.localizedAppName)
-         Text(appConfig.bundleId)
+            Text(appConfig.bundleId)
         }
-            
-
-    //    .onDelete(perform: deleteItems)
-
+        
+        
+        //    .onDelete(perform: deleteItems)
+        
     }
 }
 
